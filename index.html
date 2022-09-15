@@ -7,32 +7,36 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let ax
-        let bx
-        let cx
-    ax = prompt("nhap diem vat li");
-    bx = prompt("nhap diem hoa hoc");
-    cx = prompt("nhap diem sinh hoc");
-    let a = parseInt(ax);
-    let b = parseInt(ax);
-    let c = parseInt(cx);
-    let tong = a + b + c
-        let DTB = ( a + b + c)/3
-        document.write('tong diem 3 mon hoc: ' + tong);
-        document.write('<br/>');
-        document.write('Điểm trung bình 3 môn học là: ' +DTB);
-    </script>
-</body>
+    <table>
+        <tr>
+            <th><label for="tien">So tien muon doi</label></th>
+            <th>don vi muon doi</th>
+            <th>don vi da doi</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="tien"></td>
+            <td>
+                <select id="from">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>    
+            </td>
+            <td>
+                <select id="to">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="doitien()"> Click để đổi </button>
+            </td>
+        </tr>
+        </table>
+        <br>
+        <p id="doi"></p>
+    </body>
+    <script src="index.js"></script>
 </html>
-
-
-    
-    
-    
-    
-    
-    
-    </script>
-</body>
-</html>
+    </table>
