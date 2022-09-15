@@ -4,39 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MayTinh</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <th><label for="tien">So tien muon doi</label></th>
-            <th>don vi muon doi</th>
-            <th>don vi da doi</th>
-        </tr>
-        <tr>
-            <td><input type="text" id="tien"></td>
-            <td>
-                <select id="from">
-                    <option value="VND">VND</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                </select>    
-            </td>
-            <td>
-                <select id="to">
-                    <option value="VND">VND</option>
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                </select>
-            </td>
-            <td>
-                <button onclick="doitien()"> Click để đổi </button>
-            </td>
-        </tr>
-        </table>
-        <br>
-        <p id="doi"></p>
-    </body>
-    <script src="index.js"></script>
+    <H1>Caculator</H1>
+    <input type="number" id="NumberA">
+    <input type="number" id="NumberB">
+        <br> <br>
+    <button onclick="cong()">Addition(+)</button>
+    <button onclick="tru()">Subtraction(-)</button>
+    <button onclick="nhan()">Multiplication(X)</button>
+    <button onclick="chia()">Division(/)</button> 
+        <br> <br>
+    <div id="Result"></div>
+
+    
+ 
+
+</body>
+<script src="may_tinh.js"></script>
 </html>
-    </table>
